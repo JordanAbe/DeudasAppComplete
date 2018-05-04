@@ -1,0 +1,71 @@
+#registro de usuario
+Usuario.java
+settingFragment.java
+fragment_setting.xml
+register_main.xml
+navigation.xml
+
+navigation.xml
+
+
+|*Deuda.java: Se agrega atributo operacion
+
+|*Periodo.java: Se agrega clase para el manejo de filtro por Periodo
+
+|*NewsApi.java: se agrega la url para el consumir servicio de peridos, pago de deuda, confirmar pago de deuda
+
+|*Constantes.java: se agrega constantes para el tipo de usuario y estados
+
+|*MainActivity.java: se implementa el botón para registrar usuario
+|*MainActivity.java: se implementa código para validar: existsNumeroTelefono registrado(redirect register_main.xml). En caso contrario (redirect fragment_home)
+
+
+|*DeudasFragment.java: se implementa código para obtener los periodos del servicio y pintarlos en el espiner.
+|*DeudasFragment.java: se agrega variable textDepartamento y se valida si el usuario es administrador(mostrar spinner) si es inquilino(mostrar departamento)
+
+|*content_deuda.xml: se implementa los controles para el visualizar la deuda completa
+
+
+|*fragment_deudas.xml: se cambia a ConstraintLayout, textDepartamento y spinner
+
+-content_deuda.xml: se implementa los botones Pagar, confirmar y listado
+
+*DeudaActivity.java: se implementa código para visualizar la deuda completa.
+-DeudaActivity.java: se implementa código para validar visibilidad de botones según estado de la deuda.
+-DeudaActivity.java: se implementa botón Pagar deuda
+-DeudaActivity.java: se implementa botón Confirmar pago de deuda
+-DeudaActivity.java: se implementa botón Listado para redireccionar al listado de deudas
+
+
+
+-DeudasAdapter.java: se implementa código para poner colores(rojo, amarillo, verde) según el estado de la deuda.
+fregment_home.xml: se implementa la presentación de la App.
+item_detalle.xml: se agrega los guideLine para separar los campos.
+item_deuda.xml: se agrega los guideLine para separar los campos.
+
+
+/// Marco
+
+Instrucciones:
+según el listado debes tener 6 commits.
+
+2 commits:
+*el primer commit ya lo hiciste
+1.-content_deuda.xml: se implementa los botones Pagar, confirmar y listado
+2.-DeudasAdapter.java: se implementa código para poner colores(rojo, amarillo, verde) según el estado de la deuda.
+
+4 commits:
+*DeudaActivity.java debe tener 4 commits
+
+3.-DeudaActivity.java: 
+Del archivo DeudaActivity.java del drive pegar todo el código, luego quitar los metodos: PagarDeuda, ConfirmarDeuda y Listado 
+y hacer commit poniendo el mensaje : se implementa código para visualizar la deuda completa y para mostrar botones(pagar, confirmar, listado) según estado de la deuda.
+
+4.-DeudaActivity.java: 
+Al archivo DeudaActivity.java pegar solo el método PagarDeuda y hacer commit poniendo el mensaje: se implementa botón Pagar deuda
+
+5.-DeudaActivity.java: 
+Al archivo DeudaActivity.java pegar solo el método ConfirmarDeuda y hacer commit poniendo el mensaje: se implementa botón Confirmar pago de deuda
+
+6.-DeudaActivity.java: 
+Al archivo DeudaActivity.java pegar solo el método Listado y hacer commit poniendo el mensaje: se implementa botón Listado para redireccionar al listado de deudas
